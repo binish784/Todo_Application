@@ -20,6 +20,20 @@ export class TodosComponent implements OnInit {
     
   }
 
+  removeTodo(todo){
+    this.todos=this.todos.filter(function(t){
+      return t.id!==todo.id;
+    })
+    this.todoService.deleteTodo(todo).subscribe();
+  }
+
+  addTodo(todo){
+    let new_todo:Todo;
+    this.todoService.addTodo(todo).subscribe(todo=> 
+      this.todos.push(todo.Item)
+    );
+  }
+
 
 
 }

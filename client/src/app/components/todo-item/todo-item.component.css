@@ -1,7 +1,7 @@
 .todo{
     width: 50%;
     background-color: steelblue;
-    padding: 5px;
+    padding: 2px;
     border-bottom: 3px solid white;
     color: white;
 }
@@ -15,7 +15,7 @@
     float: right;
     border-radius: 5px;
     border:none;
+    margin-right: 10px;
     background-color: brown;
-    padding: 10px 5px;
     color: white;
 }

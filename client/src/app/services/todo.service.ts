@@ -22,4 +22,18 @@ export class TodoService {
     return this.http.get<Todo[]>(this.url,this.httpOptions);
   }
 
+  toggleTodo(todo):Observable<any>{
+    let update_url=this.url+ "/" + todo.id;
+    return this.http.put<any>(update_url+"","",this.httpOptions);
+  }
+
+  addTodo(todo){
+    let response=( this.http.post<any>(this.url,todo,this.httpOptions));
+    return response;
+  }
+
+  deleteTodo(todo){
+    return this.http.delete(this.url+"/"+todo.id,this.httpOptions);    
+  }
+
 }
