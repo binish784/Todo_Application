@@ -4,12 +4,13 @@
   "description": "simple todo application using MEAN stack",
   "main": "index.js",
   "scripts": {
-    "start":"node index",
-    "dev":"nodemon index"
+    "start": "node index",
+    "dev": "nodemon index"
   },
   "author": "Binish Manandhar",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "uuid": "^3.3.3"
   },
