@@ -31,7 +31,7 @@ router.get("/todo",function(req,res){
 
 router.post("/todo",function(req,res){
     if(!req.body.title){
-        res.status(400);
+        res.sendStatus(400);
         res.send({"msg":"Title Required"});
         return;
     }    
