@@ -1,0 +1,19 @@
+{
+  "name": "todo_application",
+  "version": "1.0.0",
+  "description": "simple todo application using MEAN stack",
+  "main": "index.js",
+  "scripts": {
+    "start":"node index",
+    "dev":"nodemon index"
+  },
+  "author": "Binish Manandhar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3"
+  }
+}
